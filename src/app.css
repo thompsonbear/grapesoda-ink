@@ -1,30 +1,92 @@
 @import 'tailwindcss';
 
 @theme {
-    --font-title: "FunnelDisplay", "sans-serif";
+	--breakpoint-xs: 24rem;
+
+	--font-display: 'Modak', 'sans-serif';
+	--font-title: 'KronaOne', 'sans-serif';
+	--font-handwriting: 'CoveredByYourGrace', 'cursive';
+
+	--animate-wave3: wave3 60s ease-in-out infinite;
+	--animate-wave2: wave2 40s ease-in-out infinite;
+	--animate-wave1: wave1 60s ease-in-out infinite;
+
+	@keyframes wave3 {
+		0% {
+			background-position: left 0px bottom -5px;
+		}
+		50% {
+			background-position: left 2000px bottom 0px;
+		}
+		100% {
+			background-position: left 0px bottom -5px;
+		}
+	}
+
+	@keyframes wave2 {
+		0% {
+			background-position: right 0px bottom -10px;
+		}
+		25% {
+			background-position: right 1000px bottom 0px;
+		}
+		50% {
+			background-position: right 2000px bottom 0px;
+		}
+		75% {
+			background-position: right 1000px bottom 0px;
+		}
+		100% {
+			background-position: right 0px bottom -10px;
+		}
+	}
+
+	@keyframes wave1 {
+		0% {
+			background-position: right 0px bottom 0px;
+		}
+		50% {
+			background-position: right 2000px bottom 0px;
+		}
+		100% {
+			background-position: right 0px bottom 0px;
+		}
+	}
 }
 
 @layer base {
 	html {
-		font-family: 'FunnelSans', sans-serif;
+		font-family: 'Glory', sans-serif;
 	}
 
 	@font-face {
-		font-family: 'FunnelSans';
-		src: url('/fonts/funnel-sans/regular.ttf');
+		font-family: 'Glory';
+		src: url('/fonts/glory/regular.ttf');
 		font-display: swap;
 	}
 
 	@font-face {
-		font-family: 'FunnelSans';
-		src: url('/fonts/funnel-sans/italic.ttf');
+		font-family: 'Glory';
+		src: url('/fonts/glory/italic.ttf');
 		font-style: italic;
 		font-display: swap;
 	}
 
 	@font-face {
-		font-family: 'FunnelDisplay';
-		src: url('/fonts/funnel-display/regular.ttf');
+		font-family: 'Modak';
+		src: url('/fonts/modak/regular.ttf');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'KronaOne';
+		src: url('/fonts/krona-one/regular.ttf');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'CoveredByYourGrace';
+		src: url('/fonts/grace/regular.ttf');
 		font-display: swap;
 	}
 }
