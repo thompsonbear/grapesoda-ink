@@ -1,3 +1,7 @@
+<script lang="ts">
+	const { links } = $props();
+</script>
+
 <header class="sticky top-0 z-50 flex w-full justify-center bg-gradient-to-b from-violet-800">
 	<nav class="flex h-14 w-full max-w-[1280px] items-center justify-between px-8">
 		<a
@@ -15,26 +19,13 @@
 			></a
 		>
 		<div class="hidden gap-8 text-lg lg:flex">
-			<a
-				href="/about"
-				class="font-title transform-all font-semibold text-violet-100 decoration-2 underline-offset-2 duration-100 hover:text-white hover:underline hover:underline-offset-4 focus:text-white focus:underline-offset-4"
-				>About</a
-			>
-			<a
-				href="/portfolio"
-				class="font-title transform-all font-semibold text-violet-100 decoration-2 underline-offset-2 duration-100 hover:text-white hover:underline hover:underline-offset-4 focus:text-white focus:underline-offset-4"
-				>Portfolio</a
-			>
-			<a
-				href="/flash"
-				class="font-title transform-all font-semibold text-violet-100 decoration-2 underline-offset-2 duration-100 hover:text-white hover:underline hover:underline-offset-4 focus:text-white focus:underline-offset-4"
-				>Flash</a
-			>
-			<a
-				href="/book"
-				class="font-title transform-all font-semibold text-violet-100 decoration-2 underline-offset-2 duration-100 hover:text-white hover:underline hover:underline-offset-4 focus:text-white focus:underline-offset-4"
-				>Book A Tattoo</a
-			>
+			{#each links as { text, href }}
+				<a
+					{href}
+					class="font-title transform-all font-semibold text-violet-100 decoration-2 underline-offset-2 duration-100 hover:text-white hover:underline hover:underline-offset-4 focus:text-white focus:underline-offset-4"
+					>{text}</a
+				>
+			{/each}
 		</div>
 	</nav>
 </header>
