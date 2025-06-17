@@ -3,6 +3,9 @@
 	import InstagramIcon from '$lib/icons/instagram.svelte';
 	import FacebookIcon from '$lib/icons/facebook.svelte';
 	import CashappIcon from '$lib/icons/cashapp.svelte';
+	import AftercareIcon from '$lib/icons/aftercare.svelte';
+	import FlashIcon from '$lib/icons/flash.svelte';
+	import BookIcon from '$lib/icons/book.svelte';
 </script>
 
 <div class="flex flex-col items-center gap-12 text-purple-900">
@@ -35,19 +38,43 @@
 		</div>
 	</div>
 
-	<div class="grid aspect-square w-full max-w-96 grid-cols-2 grid-rows-2 rounded-4xl">
+	<div class="grid w-full max-w-96 grid-cols-2 grid-rows-3 rounded-4xl">
 		<a
-			href="https://venue.ink/grapesoda.ink"
+			href="https://venue.ink/p/per-8gu60Y2QgU4/book/buk-8gzDuNxMADI"
 			target="_blank"
-			class="flex flex-col items-center justify-center gap-2 rounded-tl-4xl border border-t-2 border-l-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
+			class="flex aspect-square flex-col items-center justify-center gap-2 rounded-tl-4xl border border-t-2 border-l-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
 		>
-			<VenueIcon />
+			<BookIcon />
 			<span class="text-center">Book a Tattoo</span>
+		</a>
+		<a
+			href="https://venue.ink/@grapesoda.ink/flash"
+			target="_blank"
+			class="flex aspect-square flex-col items-center justify-center gap-2 rounded-tr-4xl border border-t-2 border-r-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
+		>
+			<FlashIcon />
+			<span class="text-center">Browse Flash</span>
+		</a>
+		<a
+			href="https://venue.ink/@grapesoda.ink/page/aftercare"
+			target="_blank"
+			class="flex aspect-square flex-col items-center justify-center gap-2 border border-l-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
+		>
+			<AftercareIcon />
+			<span class="text-center">Aftercare</span>
+		</a>
+		<a
+			href="https://cash.app/$grapesodaink"
+			target="_blank"
+			class="flex aspect-square flex-col items-center justify-center gap-2 border border-r-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
+		>
+			<CashappIcon />
+			<span class="text-center">Tip Me</span>
 		</a>
 		<a
 			href="https://www.instagram.com/grapesoda.ink/"
 			target="_blank"
-			class="flex flex-col items-center justify-center gap-2 rounded-tr-4xl border border-t-2 border-r-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
+			class="flex aspect-square flex-col items-center justify-center gap-2 rounded-bl-4xl border border-b-2 border-l-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
 		>
 			<InstagramIcon />
 			<span class="text-center">Instagram</span>
@@ -55,18 +82,10 @@
 		<a
 			href="https://www.facebook.com/grapesoda.ink"
 			target="_blank"
-			class="flex flex-col items-center justify-center gap-2 rounded-bl-4xl border border-b-2 border-l-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
+			class="flex aspect-square flex-col items-center justify-center gap-2 rounded-br-4xl border border-r-2 border-b-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
 		>
 			<FacebookIcon />
 			<span class="text-center">Facebook</span>
-		</a>
-		<a
-			href="https://cash.app/$grapesodaink"
-			target="_blank"
-			class="flex flex-col items-center justify-center gap-2 rounded-br-4xl border border-r-2 border-b-2 bg-[url('/textures/noise.png')] font-medium tracking-wide transition-colors hover:bg-purple-800/10"
-		>
-			<CashappIcon />
-			<span class="text-center">Tip Me</span>
 		</a>
 	</div>
 </div>
