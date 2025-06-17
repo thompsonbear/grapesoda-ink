@@ -4,6 +4,13 @@
 	let { children } = $props();
 </script>
 
-<div class="p-4 flex sm:items-center justify-center min-h-screen bg-[url('/textures/noise.png')] bg-purple-50">
+<svelte:head>
+	<title>Grape Soda Ink</title>
+	<meta name="description" content="Tattoo Artist in Knoxville, TN at Ghost Boy Tattoo" />
+</svelte:head>
+
+<div
+	class="flex min-h-screen justify-center bg-purple-50 bg-[url('/textures/noise.png')] p-4 sm:items-center"
+>
 	{@render children()}
 </div>
